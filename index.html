@@ -21,7 +21,7 @@
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-    <link rel="icon" href="./static/images/logo.png">
+    <!-- <link rel="icon" href="./static/images/logo.png"> -->
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -41,7 +41,6 @@
 
 <body>
 
-
     <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop">
@@ -49,92 +48,35 @@
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title"
                             style="display: flex;flex-direction: row;align-items: center;justify-content: center;margin-bottom: 5px;">
-                            <img src="./static/images/logo.png" width="60" height="60"
-                                style="margin-right: 10px;">GraphWiz:
+                            <img src="./static/figures/HKUSTGZ.png" width="400" height="400"
+                                style="margin-right: 10px;">
+                            <img src="./static/figures/CUHK.png" width="400" height="400"
+                                style="margin-right: 10px;">
                         </h1>
-                        <h1 class="title is-2 publication-title">An Instruction-Following Language Model for Graph
-                            Problems</h1>
+                        <br />
+                        <h1 class="title is-1 publication-title">Graph Intelligence with Large Language Models and Prompt Learning</h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a href="https://jerrynchen.github.io/">Nuo Chen</a><sup>&</sup>,</span>
+                                <a href="https://sites.google.com/view/lijia">Jia Li<sup>1</sup></a>,</span>
                             <span class="author-block">
-                                <a href="https://yhleeee.github.io/">Yuhan Li</a><sup>&</sup>,
+                                <a href="https://xgsun.mysxl.cn/">Xiangguo Sun<sup>2</sup></a>,
                             </span>
                             <span class="author-block">
-                                <a href="https://squareroot3.github.io/">Jianheng Tang</a>,
+                                <a href="https://yhleeee.github.io/">Yuhan Li<sup>1</sup></a>,
                             </span>
                             <span class="author-block">
-                                <a href="https://sites.google.com/view/lijia">Jia Li</a><sup>*</sup></span>
+                                <a href="https://scholar.google.com/citations?user=l0W7XHoAAAAJ&hl=zh-CN">Zhixun Li<sup>2</sup></a></span>,
+                            <span class="author-block">
+                                <a href="https://www1.se.cuhk.edu.hk/~hcheng/">Hong Cheng<sup>2</sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.se.cuhk.edu.hk/people/academic-staff/prof-yu-xu-jeffrey/">Jeffrey Xu Yu<sup>2</sup></a>
+                            </span>
                         </div>
 
                         <div class="is-size-5 publication-authors" style="margin-top: 10px;">
-                            <span class="author-block">The Hong Kong University of Science and Technology
-                                (Guangzhou), <br> The Hong Kong University of Science and Technology</span>
-                        </div>
-                        <div class="is-size-5 publication-authors">
-                            <span class="author-block" style="font-size: 15px;">(<sup>&</sup>Equal Contribution,
-                                <sup>*</sup>Correspondence)</span>
-                        </div>
-
-                        <div class="column has-text-centered">
-                            <div class="publication-links">
-                                <!-- PDF Link. -->
-                                <span class="link-block">
-                                    <a href="https://arxiv.org/abs/2402.16029"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </span>
-                                        <span>Paper</span>
-                                    </a>
-                                </span>
-
-                                <span class="link-block">
-                                    <a href="https://huggingface.co/GraphWiz" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fa fa-database"></i>
-                                        </span>
-                                        <span>GraphInstruct</span>
-                                    </a>
-                                </span>
-
-                                <span class="link-block">
-                                    <a href="https://huggingface.co/GraphWiz" target="_blank"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fa fa-laugh"></i>
-                                        </span>
-                                        <span>Models</span>
-                                    </a>
-                                </span>
-
-                                <!-- Code Link. -->
-                                <span class="link-block">
-                                    <a href="https://github.com/nuochenpku/Graph-Reasoning-LLM"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Code</span>
-                                    </a>
-                                </span>
-
-
-                                <!-- Video Link.
-                                <span class="link-block">
-                                    <a href="https://www.youtube.com/watch?v=aqw2SCWeWD0"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fab fa-youtube"></i>
-                                        </span>
-                                        <span>Video</span>
-                                    </a>
-                                </span> -->
-
-
-                            </div>
-
+                            <span class="author-block"><sup>1</sup>The Hong Kong University of Science and Technology
+                                (Guangzhou), <br> <sup>2</sup>The Chinese University of Hong Kong</span>
                         </div>
                     </div>
                 </div>
@@ -151,30 +93,56 @@
                     <h2 class="title is-2">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Large language models (LLMs) have achieved impressive success across several fields, but
-                            their proficiency in understanding and resolving complex graph problems is less explored. To
-                            bridge this gap, we introduce GraphInstruct, a novel and comprehensive instruction-tuning
-                            dataset designed to equip language models with the ability to tackle a broad spectrum of
-                            graph problems using explicit reasoning paths.
-                            Utilizing GraphInstruct, we build <b>GraphWiz</b>, an open-source language model capable of
-                            resolving various graph problem types while generating clear reasoning processes. To enhance
-                            the model's capability and reliability, we incorporate the Direct Preference Optimization
-                            (DPO) framework into the graph problem-solving context. The enhanced model, GraphWiz-DPO,
-                            achieves an average accuracy of 65% across nine tasks with different complexity levels,
-                            surpassing GPT-4 which has an average accuracy of 43.8%.
-                            Moreover, our research delves into the delicate balance between training data volume and
-                            model performance, highlighting the potential for overfitting with increased data.
-                            We also explore the transferability of the model's reasoning ability across different graph
-                            tasks, indicating the model's adaptability and practical application potential.
-                            Our investigation offers a new blueprint and valuable insights for developing LLMs
-                            specialized in graph reasoning and problem-solving.
+                            Graph plays a significant role in representing and analyzing complex 
+                            relationships in real-world applications such as citation networks, social 
+                            networks, and biological data. Graph intelligence is rapidly becoming a 
+                            crucial aspect of understanding and exploiting the intricate interconnections 
+                            within graph data. Recently, <b>large language models</b> (LLMs) and <b>prompt learning</b> 
+                            techniques have pushed graph intelligence forward, outperforming traditional 
+                            Graph Neural Network (GNN) pre-training methods and setting new benchmarks 
+                            for performance. In this tutorial, we begin by offering a comprehensive 
+                            review and analysis of existing methods that integrate LLMs with graphs. 
+                            We introduce existing works based on a novel taxonomy that classifies 
+                            them into three distinct categories according to the roles of LLMs in 
+                            graph tasks: as enhancers, predictors, or alignment components. Secondly, 
+                            we introduce a new learning method that utilizes prompting on graphs, 
+                            offering substantial potential to enhance graph transfer capabilities 
+                            across diverse tasks and domains. We discuss existing works on graph 
+                            prompting within a unified framework and introduce our developed tool 
+                            for executing a variety of graph prompting tasks. Additionally, we 
+                            discuss the applications of combining Graphs, LLMs, and prompt learning 
+                            across various tasks, such as urban computing, recommendation systems, and 
+                            anomaly detection. <b>This lecture-style tutorial is an extension of 
+                            our original work published in <a href="https://arxiv.org/abs/2311.12399">IJCAI 2024</a>
+                            and <a href="https://arxiv.org/abs/2311.16534">arXiv</a> with the invitation of KDD24.</b>
                         </p>
                     </div>
                 </div>
             </div>
             <!--/ Abstract. -->
 
-            <br>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <h2 class="title is-2">Tentative Schedule</h2>
+            </div>
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="content has-text-justified">
+                        <p>The tutorial will be held on August 26 10:00 - 13:00 UTC+1.
+                        </p>
+                        <li><strong><span>10:00 - 10:15:</span></strong> Opening & Introduction; Presentor: <b>Prof. Hong Cheng</b></li>
+                        <li><strong><span>10:15 - 10:50:</span></strong> Part I: Traditional Pretraining; Presentor: <b>Mr. Zhixun Li</b></li>
+                        <li><strong><span>10:50 - 11:30:</span></strong> Part II: Pretraining with LLM; Presentor: <b>Mr. Yuhan Li</b></li>
+                        <li><strong><span>11:30 - 12:00:</span></strong> Coffee Break</li>
+                        <li><strong><span>12:00 - 12:45:</span></strong> Part III: Pretraining with Prompt; Presentor: <b>Dr. Xiangguo Sun</b></li>
+                        <li><strong><span>12:45 - 13:00:</span></strong> Q & A</li>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -182,270 +150,72 @@
     <section class="section">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
-                <h2 class="title is-2">Task Definition</h2>
-                <br>
+                <h2 class="title is-2">Contributors</h2>
+            </div>
+            <div>
+                <img src="./static/figures/JiaLi.png" width="20%" style="zoom:30%;margin-right:100px" align="left">
+                <span><b>Jia Li</b>  is an assistant professor with the Data Science and Analytics Thrust, Information Hub, 
+                    The Hong Kong University of Science and Technology. He received the Ph.D. degree at The Chinese 
+                    University of Hong Kong in 2021. His research interests include machine learning, data mining and 
+                    deep graph learning. He received the KDD'23 best paper award and published several papers as the 
+                    leading/corresponding author in top conferences such as T-PAMI, KDD, NeurIPS and ICML.</span>
             </div>
 
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h4 class="title is-3">• An Example</h4>
-                    <br>
-
-                    <div class="content has-text-justified">
-                        <img class="columns is-centered has-text-centered" src="./static/images/example.png"
-                            alt="Teaser" width="95%" style="margin:0 auto">
-                        <br>
-                        <figcaption>
-                            <p style="text-align: center;">
-                                <font color="061E61">
-                                    <b>Figure 1:</b> An example of solving the <b></b>Connectivity</b> task explicitly
-                                    within
-                                    natural language via LLMs.
-                                </font>
-                            </p>
-                        </figcaption>
-                        <br>
-                        <p>
-                        <ul>
-                            <li>
-                                In Figure 1, given an undirected graph and two nodes in this graph, an LLM needs to
-                                answer
-                                whether these two nodes are connected through a path.
-                            </li>
-                            <li>
-                                While the intersection of graphs and LLMs is an emerging field, it remains uncertain
-                                <b>to
-                                    what extent LLMs can comprehend a graph merely from the context</b>. Current graph
-                                machine
-                                learning
-                                tasks, such as node classification and link prediction, primarily require LLMs to focus
-                                on the
-                                semantic aspects of graphs.
-                                This often entails a basic understanding of local subgraph structures. Although
-                                benchmarks like
-                                mathematical problem-solving and
-                                knowledge-oriented question-answering necessitate multi-hop
-                                reasoning within a graph, they do not always demand an in-depth understanding of the
-                                entire
-                                graph's structure. To address this, newer benchmarks like GraphQA and
-                                NLGraph have introduced more diverse and complex graph problems to LLMs,
-                                demanding a more profound grasp of graph structures---challenges typically addressed by
-                                specific
-                                graph algorithms.
-                            </li>
-                            <li>
-                                <b>We aim at leveraging instruction-tuning to build a powerful instruction-following LLM
-                                    that
-                                    can map textural descriptions of graphs and structures, and then solve different
-                                    graph
-                                    problems explicitly in natural language.</b>
-                            </li>
-                        </ul>
-                        </p>
-                        <br>
-                    </div>
-                    <br />
-                </div>
+            <div style="clear:both;margin-top:100px;">
+                <img src="./static/figures/XiangguoSun.jpeg" width="20%" style="zoom:30%;margin-right:100px" align="left">
+                <span><b>Xiangguo Sun</b>
+                    is a postdoctoral research fellow at The Chinese University of Hong Kong. He was recognized as the 
+                    "Social Computing Rising Star" in 2023 by CAAI. He received his Ph.D. from Southeast University and 
+                    won the Distinguished Ph.D. Dissertation Award. He studied as a joint Ph.D. student at The University 
+                    of Queensland hosted by ARC Future Fellow Prof. Hongzhi Yin from Sep 2019 to Sep 2021. His research 
+                    interests include social computing and network learning. Some of his works appear in SIGKDD, ICLR, VLDB, 
+                    The Web Conference, TKDE, etc.</span>
             </div>
 
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h4 class="title is-3">• Task Details</h4>
-                    <br>
-
-                    <div class="content has-text-justified">
-                        <img class="columns is-centered has-text-centered" src="./static/images/task.png" alt="Teaser"
-                            width="95%" style="margin:0 auto">
-                        <br>
-                        <figcaption>
-                            <p style="text-align: center;">
-                                <font color="061E61">
-                                    <b>Table 1:</b> Overview of nine tasks in GraphWiz with problem
-                                    definition, time complexity, graph type (weighted/directed), node size range, and
-                                    task difficulty. |V| and |E| indicate the number of nodes and edges in the
-                                    graph.
-                                </font>
-                            </p>
-                        </figcaption>
-                        <br>
-                        <p>
-                        <ul>
-                            <li>
-                                In this work, we meticulously choose a diverse set of nine graph problems that span
-                                across different levels of computational complexity, showcasing the breadth and depth of
-                                our study. We include four of linear complexity tasks: <b>Connectivity</b> and
-                                <b>Cycle Detection</b>, <b>Bipartite Graph Checking</b>, and <b>Topological
-                                    Sort</b>; three of polynomial complexity tasks: <b>Shortest Path</b>, <b>Maximum
-                                    Triangle Sum</b>, and <b>Maximum Flow</b>; two of NP-Complete tasks: <b>Hamilton
-                                    Path</b> and <b>Subgraph Matching</b>.
-                            </li>
-                            <li>
-                                By selecting these nine graph problems, our work benefits from a comprehensive
-                                exploration of graph theory that spans simple to complex, and tractable to intractable
-                                problems. This diverse selection allows us to not only contribute to the theoretical
-                                understanding of graph algorithms but also to address a wide range of practical
-                                applications.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <br />
-                </div>
+            <div style="clear:both;margin-top:60px;">
+                <img src="./static/figures/YuhanLi.jpeg" width="20%" style="zoom:30%;margin-right:100px" align="left">
+                <span><b>Yuhan Li</b> is currently a second-year Ph.D. student of the Data Science and Analytics thrust, Hong 
+                    Kong University of Science and Technology (Guangzhou), supervised by Prof. Jia Li. He received the 
+                    master degree in Computer Science from Nankai University in 2023. His research interests mainly focus 
+                    on large language models and (knowledge) graph learning. He has published papers in international 
+                    conferences and journals, such as SIGKDD, EMNLP, IJCAI, and TKDE. He has also reviewed papers in many 
+                    top-tier conferences and journals, like SIGKDD, ACL, TKDE, etc.</span>
             </div>
 
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container is-max-desktop">
-
-            <div class="columns is-centered has-text-centered">
-                <h2 class="title is-2">Technical Description</h2>
-                <br>
+            <div style="clear:both;margin-top:130px;">
+                <img src="./static/figures/ZhixunLi.jpeg" width="20%" style="zoom:30%;margin-right:100px" align="left">
+                <span><b>Zhixun Li</b>
+                    is currently a Ph.D. student in the Department of Systems Engineering and Engineering Management at 
+                    the Chinese University of Hong Kong, supervised by Prof. Jeffrey Xu Yu. He received the B.Eng degree 
+                    in Computer Science from Beijing Institute of Technology. His research interests mainly focus on deep graph learning and 
+                    trustworthy AI. He has published papers at top international conferences, such as NeurIPS, SIGKDD, ICDM, and IJCAI. He 
+                    has also reviewed papers in many top-tier conferences and journals, like SIGKDD, ICDM, ICDE, etc.</span>
             </div>
 
-            <!-- Architecture -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h4 class="title is-3">• GraphInstruct Collection</h4>
-
-                    <div class="content has-text-justified">
-                        <img class="columns is-centered has-text-centered" src="./static/images/data.png" alt="Teaser"
-                            width="65%" style="margin:0 auto">
-                        <br>
-                        <figcaption>
-                            <p style="text-align: center;">
-                                <font color="061E61">
-                                    <b>Figure 2:</b> The overview of GraphInstruct collection process.
-                                </font>
-                            </p>
-                        </figcaption>
-                        <br>
-                        <p>
-                        <ul>
-                            <li>
-                                <b>Graph Problem Generation.</b> To create a diverse and challenging suite of graph
-                                problems for model training and
-                                testing, we follow a programming aid way to generate random graph
-                                problems for each predefined task. Each task is associated with a unique template
-                                designed to capture the distinct characteristics of graphs, such as whether they are
-                                directed or undirected and if their edges carry weights. We use the Erdős-Rényi
-                                (ER)
-                                model to generate random graphs.
-                            </li>
-                            <li>
-                                <b>Elipict Reasoning Paths Generation.</b> The most significant feature in GraphInstruct
-                                focuses on each G-Q paired
-                                with an explicit reasoning path R. Considering the impracticality of
-                                manually annotating explicit reasoning paths for these graph tasks due to the complexity
-                                and time-consuming nature of the work. We rely on GPT-4 to generate the initial
-                                reasoning paths.
-                            </li>
-                            <li>
-                                <b>Data Augmentation with Rejection Sampling.</b>
-                                Given the observation that GPT-4 performs poorly on many graph tasks, such as resulting
-                                in fewer than 100 correct samples for the Maximum Flow task in D<sup>1</sup>. To further
-                                augment
-                                the dataset with a broader spectrum of reasoning paths, we adopt a rejection sampling
-                                strategy.
-                            </li>
-                            <li>
-                                <b>How to select diverse reasoning paths?</b>
-                                This phase is particularly challenging due to the need to balance accuracy with
-                                diversity. To address this, we employ a set of refined strategies, categorized into
-                                string-based and semantic-based approaches for selecting the distinct generated
-                                reasoning paths.
-                            </li>
-                        </ul>
-                        </p>
-                        <br>
-
-                    </div>
-                    <br />
-                </div>
+            <div style="clear:both;margin-top:140px;">
+                <img src="./static/figures/HongCheng.png" width="20%" style="zoom:30%;margin-right:100px" align="left">
+                <span><b>Hong Cheng</b> is a Professor in the Department of Systems Engineering and Engineering Management, 
+                    The Chinese University of Hong Kong. She received the Ph.D. degree from the University of Illinois at 
+                    Urbana-Champaign in 2008. Her research interests include data mining, database systems, and machine 
+                    learning. She received research paper awards at SIGKDD'23,  ICDE'07, SIGKDD'06, and SIGKDD'05. She 
+                    received the 2010 Vice-Chancellor's Exemplary Teaching Award at The Chinese University of Hong Kong.</span>
             </div>
 
-            <!-- Inference -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h2 class="title is-3">• GraphWiz Training</h2>
-
-                    <div class="content has-text-justified">
-                        <p>
-                            Based on the GraphInstruct dataset, we build GraphWiz, which is developed to
-                            optimize current LLMs' capabilities in solving graph problems with explicit reasoning paths.
-                            Our training methodology for GraphWiz is a novel two-phase process that first hones the
-                            model's ability to interpret and solve a wide range of graph problems using
-                            <b><i>Mixed-Task Instruction Tuning</i></b>. The subsequent phase, <b><i>DPO
-                                    Alignment</i></b>, further
-                            sharpens the model's reasoning by training it to distinguish between more and less effective
-                            problem-solving paths. This innovative approach, particularly the use of DPO in the realm of
-                            graph problems, represents a pioneering step in teaching LLMs not just to output explicit
-                            answers, but to develop and follow a logical reasoning process that mimics expert
-                            problem-solving behavior.
-                        </p>
-                        <br>
-                        <img class="columns is-centered has-text-centered" src="./static/images/model.png" alt="Teaser"
-                            width="95%" style="margin:0 auto">
-                        <br>
-                        <figcaption>
-                            <p style="text-align: center;">
-                                <font color="061E61">
-                                    <b>Figure 3:</b> Training pipelines of GraphWiz.
-                                </font>
-                            </p>
-                        </figcaption>
-                    </div>
-                    <br />
-
-                </div>
+            <div style="clear:both;margin-top:130px;">
+                <img src="./static/figures/JeffreyxuYu.png" width="20%" style="zoom:30%;margin-right:100px" align="left">
+                <span><b>Jeffrey Xu Yu</b> received the BE, ME, and PhD degrees in computer science from the University 
+                    of Tsukuba, Japan, in 1985, 1987, and 1990, respectively. He has held teaching positions with the 
+                    Institute of Information Sciences and Electronics, University of Tsukuba, and with the Department of 
+                    Computer Science, Australian National University, Australia. Currently, he is a professor at the 
+                    Department of Systems Engineering and Engineering Management, Chinese University of Hong Kong, Hong 
+                    Kong. His current research interests include graph database, graph mining, keyword search in relational 
+                    databases, and social network analysis.</span>
             </div>
-
-            <!-- Instruction -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h2 class="title is-3">• Case Study</h2>
-
-                    <img class="columns is-centered has-text-centered" src="./static/images/case.png" alt="Teaser"
-                        width="65%" style="margin:0 auto">
-                    <figcaption>
-                        <p style="text-align: center;">
-                            <font color="061E61">
-                                <b>Figure 4:</b> A typical case of GraphWiz and GPT-4.
-                            </font>
-                        </p>
-                    </figcaption>
-
-                    <br>
-                    <div class="content has-text-justified">
-                        <p>
-                            In this component, we present a case study of a complex cycle detection problem that
-                            involves an undirected graph with <b>89 nodes</b> in Figure 4, a scale that
-                            poses substantial challenges even for human solvers. For a human to detect a cycle in such
-                            an extensive graph would require external aids or substantial time, as it is impractical to
-                            resolve purely through mental computation. We could observe that GPT-4 outputs a very short
-                            incorrect answer, which could arise from the model's constraints in processing long inputs
-                            or from an erroneous interpretation of the graph's intricate structure. This limitation
-                            reflects the challenges that conventional LLMs encounter when adapting to graph-theoretic
-                            problems. In contrast, GrphWiz correctly detects a cycle, providing a clear and detailed
-                            reasoning path. This demonstration of GrphWiz's spatial reasoning and memory retention
-                            capabilities is significant. It indicates that the model has effectively internalized the
-                            principles of graph theory to the extent that it can autonomously navigate through and
-                            reason about large-scale and complex graph structures. This case study is a testament to the
-                            feasibility of employing GraphWiz for sophisticated graph problems.
-                            The model's ability to accurately resolve such complex tasks suggests it has substantial
-                            practical applications, offering a robust tool for researchers and practitioners.
-                        </p>
-                    </div>
-                    <br />
-                </div>
-            </div>
-
         </div>
     </section>
 
 
-    <section class="section">
+    <section class="section" style="clear: both;">
         <div class="container is-max-desktop">
 
             <!--    <div class="columns is-centered has-text-centered">-->
@@ -458,17 +228,13 @@
                     <h2 class="title is-3">Related Links</h2>
 
                     <div class="content has-text-justified">
-                        <p>
-                            You may refer to related work that serves as foundations for our framework and code
-                            repository,
-                            such as <a href="https://github.com/Arthur-Heng/NLGraph">NLGraph</a> and
-                            <a href="https://github.com/google-research/google-research/tree/master/graphqa">GraphQA
-                            </a>.
-                            We also partially draw inspirations from <a
-                                href="https://github.com/microsoft/MathOctopus/tree/main">MathOctopus</a>.
+                        <p></p>
                             For more details about <b>Graph+LLM</b>, you are welcome to follow our <a
                                 href="https://arxiv.org/abs/2311.12399">survey</a> and
                             <a href="https://github.com/yhLeeee/Awesome-LLMs-in-Graph-tasks">repository</a>.
+                            For more details about <b>Graph Prompt</b>, you are welcome to follow our <a
+                            href="https://arxiv.org/abs/2311.16534">survey</a> and
+                        <a href="https://github.com/WxxShirley/Awesome-Graph-Prompt">repository</a>.
 
                         </p>
                     </div>
@@ -482,17 +248,51 @@
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>@articles{chen2024graphwiz,
-  title={GraphWiz: An Instruction-Following Language Model for Graph Problems},
-  author={Nuo Chen, Yuhan Li, Jianheng Tang, Jia Li},
-  journal={arXiv preprint arXiv:2402.16029},
-  year={2024}
-}
-
+            <pre><code>@article{li2023survey,
+    title={A survey of graph meets large language model: Progress and future directions},
+    author={Li, Yuhan and Li, Zhixun and Wang, Peisong and Li, Jia and Sun, Xiangguo and Cheng, Hong and Yu, Jeffrey Xu},
+    journal={arXiv preprint arXiv:2311.12399},
+    year={2023}
+  }
 </code></pre>
+
+<pre><code>@article{sun2023graph,
+    title={Graph prompt learning: A comprehensive survey and beyond},
+    author={Sun, Xiangguo and Zhang, Jiawen and Wu, Xixi and Cheng, Hong and Xiong, Yun and Li, Jia},
+    journal={arXiv preprint arXiv:2311.16534},
+    year={2023}
+  }
+  </code></pre>
+
+  <pre><code>@article{chen2024graphwiz,
+    title={GraphWiz: An Instruction-Following Language Model for Graph Problems},
+    author={Chen, Nuo and Li, Yuhan and Tang, Jianheng and Li, Jia},
+    journal={arXiv preprint arXiv:2402.16029},
+    year={2024}
+  }
+  </code></pre>
+  
+  <pre><code>@article{li2024zerog,
+    title={ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs},
+    author={Li, Yuhan and Wang, Peisong and Li, Zhixun and Yu, Jeffrey Xu and Li, Jia},
+    journal={arXiv preprint arXiv:2402.11235},
+    year={2024}
+  }
+  </code></pre>
+
+  <pre><code>@article{zhao2024all,
+    title={All in one and one for all: A simple yet effective method towards cross-domain graph pretraining},
+    author={Zhao, Haihong and Chen, Aochuan and Sun, Xiangguo and Cheng, Hong and Li, Jia},
+    journal={arXiv preprint arXiv:2402.09834},
+    year={2024}
+  }
+  </code></pre>
         </div>
     </section>
 
+    <p style="text-align: center;">
+    <a href="https://mapmyvisitors.com/web/1bw7o"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=s88PaGA71H5h7vvfgXmu070pFWyFs5y1QJ9G48IgtY8&cl=ffffff" /></a>
+    </p>
 
     <footer class="footer">
         <div class="container">
